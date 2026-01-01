@@ -30,7 +30,11 @@ a {
 .hero {
   position: relative;
   background: url("images/hero.jpg.JPEG") center center / cover no-repeat;
+codex/create-website-for-mtk-tuning-w48xas
   padding: 2.5rem 10vw 6rem;
+=======
+  padding: 2.5rem 8vw 6rem;
+MTK-Tuning
   min-height: 80vh;
   display: flex;
   flex-direction: column;
