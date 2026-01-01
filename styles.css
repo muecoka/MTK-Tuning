@@ -28,9 +28,8 @@ a {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(12, 15, 20, 0.9), rgba(12, 15, 20, 0.7)),
-    url("https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80")
-      center / cover;
+  position: relative;
+  background: url("images/hero.jpg") center center / cover no-repeat;
   padding: 2.5rem 8vw 6rem;
   min-height: 80vh;
   display: flex;
@@ -38,10 +37,26 @@ a {
   gap: 4rem;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #000;
+  padding: 1rem 2rem;
+  border-radius: 999px;
 }
 
 .logo {
@@ -54,11 +69,11 @@ a {
   display: flex;
   gap: 2rem;
   font-size: 1rem;
-  color: var(--muted);
+  color: #e6e6e6;
 }
 
 .nav-links a:hover {
-  color: var(--text);
+  color: #fff;
 }
 
 .hero-content {
