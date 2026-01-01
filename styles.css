@@ -29,7 +29,11 @@ a {
 
 .hero {
   position: relative;
+  codex/add-website-feature-vwwca7
+  background: url("images/hero.jpg.JPEG") center center / cover no-repeat;
+=======
   background: url("images/hero.jpg") center center / cover no-repeat;
+MTK-Tuning
   padding: 2.5rem 8vw 6rem;
   min-height: 80vh;
   display: flex;
