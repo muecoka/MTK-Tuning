@@ -481,9 +481,10 @@ textarea {
 .logo img {
   height: 40px;        /* Desktop */
   width: auto;
+  max-width: 100%;
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .logo img {
     height: 32px;
   }
