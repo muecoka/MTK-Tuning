@@ -57,20 +57,23 @@ img {
 
 .primary-nav {
   background: #000;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .secondary-nav {
   background: rgba(5, 7, 12, 0.85);
   border-bottom: none;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-direction: column;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 0.9rem;
   text-align: center;
 }
 
 .secondary-nav .nav-links {
   margin-top: 0;
-  width: 100%;
+  width: auto;
   justify-content: center;
 }
 
@@ -80,7 +83,7 @@ img {
 
 .logo {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
