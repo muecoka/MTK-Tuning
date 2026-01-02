@@ -478,3 +478,13 @@ textarea {
     height: 180px;
   }
 }
+.logo img {
+  height: 40px;        /* Desktop */
+  width: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .logo img {
+    height: 32px;
+  }
+}
