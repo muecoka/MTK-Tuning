@@ -321,7 +321,7 @@ img {
   display: grid;
   gap: 0.4rem;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: center;
 }
 
 input,
@@ -334,6 +334,7 @@ textarea {
   color: var(--text);
   font-family: inherit;
   width: 100%;
+  text-align: center;
 }
 
 textarea {
