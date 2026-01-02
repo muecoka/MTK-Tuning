@@ -22,7 +22,6 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  text-align: center;
 }
 
 a {
@@ -47,7 +46,7 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1.5rem;
   flex-wrap: wrap;
   padding: 1rem clamp(1.5rem, 6vw, 6.5rem);
@@ -83,10 +82,8 @@ img {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -487,5 +484,19 @@ textarea {
 
   .gallery-item img {
     height: 180px;
+  }
+  .logo {
+  display: flex;
+  align-items: center;
+  }
+
+.logo img {
+  height: 32px;   /* Desktop – sauber & lesbar */
+  width: auto;
+  display: block;
+  }
+  @media (max-width: 600px) {
+  .logo img {
+    height: 28px;
   }
 }
