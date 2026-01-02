@@ -13,10 +13,10 @@
     />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav">
-        <div class="logo">images/logo.jpg.png</div>
-    <form class="nav-search" role="search">
+    <header class="hero">
+      <nav class="nav primary-nav">
+        <div class="logo">MTK Tuning</div>
+        <form class="nav-search" role="search">
           <input type="search" placeholder="Suche" aria-label="Suche" />
         </form>
         <details class="menu">
@@ -29,8 +29,15 @@
           </div>
         </details>
       </nav>
-    </header>
-      <section class="hero">
+      <nav class="nav secondary-nav">
+        <div class="nav-links">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <a class="cta" href="#kontakt">Termin anfragen</a>
+      </nav>
       <div class="hero-content">
         <p class="eyebrow">Premium Fahrzeugveredelung</p>
         <h1>
@@ -43,6 +50,7 @@
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#kontakt">Beratung anfordern</a>
+          <a class="button ghost" href="#leistungen">Unsere Leistungen</a>
         </div>
       </div>
     </header>
@@ -61,7 +69,7 @@
             <h3>Ambientebeleuchtung</h3>
             <p>
               Dynamische Lichtlinien, fein dimmbar und perfekt auf Ihr Interieur
-              abgestimmt. Über 60 Farben & Szenen individuell konfigurierbar.
+              abgestimmt. Mehr als 60 Farben & Szenen möglich.
             </p>
             <ul>
               <li>Türleisten, Armaturen, Fußraum</li>
@@ -78,17 +86,19 @@
             <ul>
               <li>Individuelle Muster</li>
               <li>Mehrere Helligkeitsstufen</li>
-              <li>Natürliche Lichtwirkung bei Tag und Nacht</li>
+              <li>Perfekte Tageslichtoptik</li>
             </ul>
           </article>
           <article class="card">
             <h3>Apple CarPlay Nachrüstung</h3>
             <p>
-              Kabellos oder kabelgebunden – wir integrieren CarPlay sauber und OEM-nah in Ihr Infotainment.
+              Kabellos oder kabelgebunden – wir rüsten CarPlay sauber nach und
+              integrieren es nahtlos in Ihr Infotainment.
             </p>
             <ul>
               <li>Navigation, Musik & Nachrichten</li>
-              <li>OEM-Style Bedienunge</li>
+              <li>Sprachsteuerung via Siri</li>
+              <li>OEM-Style Bedienung</li>
             </ul>
           </article>
         </div>
@@ -96,15 +106,15 @@
 
       <section id="galerie" class="section gallery">
         <div class="section-header">
-          <h2>Design, das begeistert. Technik, die bleibt.</h2>
+          <h2>Emotionen, die bleiben</h2>
           <p>
-            Hochwertige Materialien und fein abgestimmte Lichtakzente schaffen ein
-            exklusives Fahrerlebnis - bei Tag und Nacht.
+            Hochwertige Materialien und ruhige Lichtlinien sorgen für ein
+            exklusives Fahrerlebnis bei Tag und Nacht.
           </p>
         </div>
         <div class="gallery-grid">
           <div class="gallery-card">
-            <h4>Ambientebeleuchtung</h4>
+            <h4>Ambientebeleuchtung 360°</h4>
             <p>Fließende Lichtkonturen und präzise Akzente.</p>
           </div>
           <div class="gallery-card">
@@ -113,8 +123,22 @@
           </div>
           <div class="gallery-card">
             <h4>CarPlay Integration</h4>
-            <p>Moderne Konnektivität - einfach, schnell, zuverlässig.</p>
+            <p>Alles vernetzt, alles griffbereit.</p>
           </div>
+        </div>
+        <div class="gallery-images">
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung im Fahrzeug" />
+            <figcaption>Ambientebeleuchtung im Innenraum</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="Sternenhimmel Fahrzeughimmel" />
+            <figcaption>Sternenhimmel mit Twinkle-Effekt</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="CarPlay Nachrüstung im Cockpit" />
+            <figcaption>CarPlay-Integration im Cockpit</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -156,16 +180,15 @@
             <div class="contact-info">
               <div>
                 <span>Telefon</span>
-                <strong>+43 664 34 50 220</strong>
+                <strong>+49 170 0000000</strong>
               </div>
               <div>
                 <span>E-Mail</span>
-                <strong>mtk-tuning@outlook.com</strong>
+                <strong>info@mtk-tuning.de</strong>
               </div>
               <div>
                 <span>Standort</span>
-                <strong>Alter Hainburger Weg 2A, 
-                  2460 Bruck an der Leitha</strong>
+                <strong>MTK Tuning, Bad Homburg</strong>
               </div>
             </div>
           </div>
@@ -199,15 +222,19 @@
 
     <footer class="footer">
       <div>
-        <p>© 2026 MTK Tuning - Alle Rechte vorbehalten</p>
+        <h4>MTK Tuning</h4>
+        <p>Ambientebeleuchtung · Sternenhimmel · CarPlay</p>
       </div>
       <div class="footer-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="galerie.html">Galerie Upload</a>
+        <a href="impressum.html">Impressum</a>
         <a href="agb.html">AGB</a>
         <a href="datenschutz.html">Datenschutz</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="#kontakt">Kontakt</a>
       </div>
     </footer>
   </body>
 </html>
- 
