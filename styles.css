@@ -50,10 +50,25 @@ img {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  background: #000;
   padding: 1rem clamp(1.5rem, 6vw, 6.5rem);
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.primary-nav {
+  background: #000;
+}
+
+.secondary-nav {
+  background: rgba(5, 7, 12, 0.85);
+  border-bottom: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.secondary-nav .nav-links {
+  margin-top: 0;
 }
 
 .logo {
