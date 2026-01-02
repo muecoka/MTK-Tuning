@@ -479,9 +479,9 @@ textarea {
   }
 }
 .logo img {
-  height: 68px;        /* Desktop */
+  height: 30px;        /* Desktop */
   width: auto;
-  max-width: 90%;
+  max-width: 60%;
   display: block;
 }
 @media (max-width: 600px) {
