@@ -65,15 +65,22 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   justify-content: center;
   gap: 1.2rem;
+  text-align: center;
 }
 
 .secondary-nav .nav-links {
   margin-top: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.secondary-nav .cta {
+  margin: 0 auto;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -476,16 +483,5 @@ textarea {
 
   .gallery-item img {
     height: 180px;
-  }
-}
-.logo img {
-  height: 40px;        /* Desktop */
-  width: auto;
-  max-width: 100%;
-  display: block;
-}
-@media (max-width: 600px) {
-  .logo img {
-    height: 34px;
   }
 }
