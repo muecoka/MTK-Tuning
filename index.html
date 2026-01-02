@@ -16,29 +16,19 @@
     <header class="hero">
       <nav class="nav">
         <div class="logo">MTK Tuning</div>
-        <div class="nav-links">
-          <a href="#leistungen">Leistungen</a>
-          <a href="galerie.html">Galerie</a>
-          <a href="#ablauf">Ablauf</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
-        <div class="nav-actions">
-    <button class="icon-btn" type="button" id="openSearch" aria-label="Suche öffnen">🔎</button>
-    <button class="icon-btn" type="button" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false">☰</button>
-  </div>
-</nav>
-      <div class="mobile-menu" id="mobileMenu">
-  <a href="#leistungen">Leistungen</a>
-  <a href="galerie.html">Galerie</a>
-  <a href="#ablauf">Ablauf</a>
-  <a href="#kontakt">Kontakt</a>
-</div>
-      <div class="search-overlay" id="searchOverlay">
-  <div class="search-box">
-    <input id="searchInput" type="text" placeholder="Suche..." />
-    <button class="icon-btn" type="button" id="closeSearch" aria-label="Suche schließen">✕</button>
-  </div>
-</div>
+    <form class="nav-search" role="search">
+          <input type="search" placeholder="Suche" aria-label="Suche" />
+        </form>
+        <details class="menu">
+          <summary class="hamburger">☰ Menü</summary>
+          <div class="nav-links">
+            <a href="#leistungen">Leistungen</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#ablauf">Ablauf</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+        </details>
+        <a class="cta" href="#kontakt">Termin anfragen</a>
       </nav>
       <div class="hero-content">
         <p class="eyebrow">Premium Fahrzeugveredelung</p>
