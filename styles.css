@@ -230,6 +230,7 @@ img {
 .section-header h2 {
   font-size: clamp(1.9rem, 3vw, 2.8rem);
   margin-bottom: 0.8rem;
+  text-align: center;
 }
 
 .section-header p {
