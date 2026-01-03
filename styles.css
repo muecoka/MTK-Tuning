@@ -486,4 +486,10 @@ textarea {
     width: auto;
     display: block;
     }
+  .nav .logo img {
+    height: 28px !important;
+    max-height: 28px !important;
+    width: auto !important;
+    max-width: none !important
+    }
 }
