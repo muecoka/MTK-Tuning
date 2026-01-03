@@ -74,10 +74,7 @@ img {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+line-height: 1;
 }
 
 .nav-links {
@@ -491,5 +488,12 @@ textarea {
     max-height: 28px !important;
     width: auto !important;
     max-width: none !important;
+    }
+  .nav .logo {
+    display: flex;
+    align-items: center;
+    }
+  .hero-logo {
+    display: none;
     }
 }
