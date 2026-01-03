@@ -496,4 +496,9 @@ textarea {
   .hero-logo {
     display: none;
     }
+  header.hero img {
+    height: 80px !important;
+    width: auto !important;
+    max-width: 80 px !important;
+    }
 }
