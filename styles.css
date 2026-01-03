@@ -49,9 +49,9 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space between;
   gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 1rem clamp(1.5rem, 6vw, 6.5rem);
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -82,12 +82,13 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   flex-wrap: wrap;
   color: var(--muted);
   font-size: 0.95rem;
   justify-content: center;
   margin-top: 0.75rem;
+  align-items: center;
 }
 
 .menu {
@@ -480,4 +481,9 @@ textarea {
   .gallery-item img {
     height: 180px;
   }
+  .logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+    }
 }
