@@ -1,16 +1,16 @@
 :root {
-  color-scheme: dark;
-  --bg: #07080c;
-  --surface: #131722;
-  --surface-strong: #1a2030;
-  --surface-glass: rgba(17, 22, 34, 0.72);
-  --accent: #5ee7ff;
-  --accent-strong: #b18cff;
-  --accent-warm: #ffb25b;
-  --text: #f4f6ff;
-  --muted: #aeb7cc;
-  --border: rgba(255, 255, 255, 0.12);
-  --shadow: 0 24px 60px rgba(5, 7, 14, 0.55);
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f5f7fb;
+  --surface-strong: #eef2f7;
+  --surface-glass: rgba(255, 255, 255, 0.9);
+  --accent: #2563eb;
+  --accent-strong: #7c3aed;
+  --accent-warm: #f59e0b;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
 }
 
 * {
@@ -21,8 +21,8 @@
 
 body {
   font-family: "Montserrat", system-ui, sans-serif;
-  background: radial-gradient(circle at top left, rgba(94, 231, 255, 0.12), transparent 45%),
-    radial-gradient(circle at 20% 60%, rgba(177, 140, 255, 0.12), transparent 40%),
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 45%),
+    radial-gradient(circle at 20% 60%, rgba(124, 58, 237, 0.08), transparent 40%),
     var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -44,12 +44,11 @@ h2 {
 
 .hero {
   min-height: 95vh;
-  background: linear-gradient(140deg, rgba(7, 9, 14, 0.96), rgba(9, 13, 22, 0.78)),
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.82)),
     url("images/hero.jpg.JPEG") center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
-codex/redesign-website-layout
   justify-content: space-between;
   padding-bottom: clamp(2rem, 4vw, 3.5rem);
 }
@@ -58,7 +57,7 @@ codex/redesign-website-layout
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 70% 20%, rgba(94, 231, 255, 0.16), transparent 45%);
+  background: radial-gradient(circle at 70% 20%, rgba(37, 99, 235, 0.18), transparent 45%);
   pointer-events: none;
 }
 
@@ -70,11 +69,6 @@ codex/redesign-website-layout
   display: grid;
   gap: clamp(2rem, 5vw, 4rem);
   padding-top: clamp(1.5rem, 4vw, 3rem);
-=======
-  gap: clamp(2rem, 6vw, 5rem);
-  justify-content: center;
-  align-items: stretch;
-MTK-Tuning
 }
 
 .nav {
@@ -85,8 +79,8 @@ MTK-Tuning
   flex-wrap: wrap;
   padding: 0.75rem 1.2rem;
   border-radius: 999px;
-  background: rgba(8, 10, 16, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
@@ -95,9 +89,9 @@ MTK-Tuning
 }
 
 .secondary-nav {
-  background: rgba(5, 7, 12, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border);
   justify-content: center;
   gap: 1.2rem;
 }
@@ -132,10 +126,10 @@ MTK-Tuning
   cursor: pointer;
   padding: 0.55rem 1rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border);
   color: var(--text);
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .menu summary::-webkit-details-marker {
@@ -143,10 +137,10 @@ MTK-Tuning
 }
 
 .menu[open] .nav-links {
-  background: rgba(10, 12, 18, 0.94);
+  background: rgba(255, 255, 255, 0.98);
   padding: 0.85rem 1rem;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
@@ -158,9 +152,9 @@ MTK-Tuning
 .nav-search input {
   width: 100%;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--border);
   padding: 0.55rem 1rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.85);
   color: var(--text);
 }
 
@@ -171,7 +165,7 @@ MTK-Tuning
 
 .nav-links a:hover {
   color: var(--accent);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 .cta {
@@ -181,6 +175,7 @@ MTK-Tuning
   color: var(--accent);
   font-weight: 600;
   white-space: nowrap;
+  background: rgba(37, 99, 235, 0.08);
 }
 
 .hero-grid {
@@ -245,8 +240,8 @@ MTK-Tuning
 
 .button.primary {
   background: linear-gradient(120deg, var(--accent), var(--accent-strong));
-  color: #05070c;
-  box-shadow: 0 12px 30px rgba(94, 231, 255, 0.3);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
 }
 
 .button.primary:hover {
@@ -254,14 +249,15 @@ MTK-Tuning
 }
 
 .button.ghost {
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(15, 23, 42, 0.2);
   color: var(--text);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .hero-panel {
   background: var(--surface-glass);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--border);
   padding: clamp(1.5rem, 3vw, 2.2rem);
   display: grid;
   gap: 1.4rem;
@@ -296,10 +292,10 @@ MTK-Tuning
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.2rem;
-  background: rgba(9, 12, 18, 0.85);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   padding: 1.4rem 1.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
@@ -344,7 +340,7 @@ MTK-Tuning
   background: var(--surface);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(94, 231, 255, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   box-shadow: var(--shadow);
   text-align: left;
 }
@@ -367,7 +363,7 @@ MTK-Tuning
 }
 
 .gallery {
-  background: linear-gradient(135deg, rgba(9, 14, 22, 0.92), rgba(6, 8, 15, 0.96));
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(226, 232, 240, 0.9));
 }
 
 .gallery-grid {
@@ -379,7 +375,7 @@ MTK-Tuning
 .gallery-card {
   padding: 2rem;
   border-radius: 18px;
-  background: rgba(8, 10, 16, 0.7);
+  background: #ffffff;
   border: 1px solid var(--border);
 }
 
@@ -398,9 +394,9 @@ MTK-Tuning
 .gallery-item {
   border-radius: 18px;
   overflow: hidden;
-  background: rgba(5, 8, 12, 0.7);
+  background: #ffffff;
   border: 1px solid var(--border);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
 }
 
 .gallery-item img {
@@ -424,8 +420,8 @@ MTK-Tuning
 .step {
   padding: 1.8rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid var(--border);
   position: relative;
 }
 
@@ -434,8 +430,8 @@ MTK-Tuning
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  border: 1px solid rgba(94, 231, 255, 0.35);
-  opacity: 0.4;
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -454,7 +450,7 @@ MTK-Tuning
 }
 
 .contact {
-  background: radial-gradient(circle at top, rgba(94, 231, 255, 0.12), transparent 60%);
+  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 60%);
 }
 
 .contact-card {
@@ -464,7 +460,7 @@ MTK-Tuning
   background: var(--surface-strong);
   padding: clamp(2rem, 4vw, 3rem);
   border-radius: 24px;
-  border: 1px solid rgba(94, 231, 255, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.18);
   box-shadow: var(--shadow);
   text-align: left;
 }
@@ -499,9 +495,9 @@ input,
 select,
 textarea {
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   padding: 0.7rem 0.9rem;
-  background: rgba(5, 8, 12, 0.7);
+  background: #ffffff;
   color: var(--text);
   font-family: inherit;
   width: 100%;
@@ -527,6 +523,7 @@ textarea {
   justify-content: space-between;
   border-top: 1px solid var(--border);
   color: var(--muted);
+  background: #ffffff;
 }
 
 .footer-links {
@@ -543,7 +540,7 @@ textarea {
 
 .footer-links a:hover {
   color: var(--accent);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 @media (max-width: 900px) {
