@@ -442,7 +442,7 @@ textarea {
 
 @media (max-width: 900px) {
   .nav {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .cta {
@@ -471,7 +471,7 @@ textarea {
 
   .nav-links {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .section-header {
