@@ -33,7 +33,7 @@ body {
 .top-header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.85rem clamp(1.5rem, 6vw, 6.5rem);
 }
 
@@ -432,8 +432,13 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .top-header-inner {
+    padding: 0.75rem 1.25rem;
+  }
+
   .hero {
     min-height: auto;
+    padding: 2.5rem 1.5rem 3rem;
   }
 
   .nav-links {
@@ -443,6 +448,24 @@ textarea {
 
   .section-header {
     margin-bottom: 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .card,
+  .gallery-card,
+  .step {
+    padding: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .button {
+    min-width: 0;
   }
 
   .gallery-item img {
