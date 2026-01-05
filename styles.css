@@ -1,16 +1,259 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MTK Tuning | Ambientebeleuchtung, Sternenhimmel & CarPlay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav primary-nav">
+        <div class="logo">MTK Tuning</div>
+        <form class="nav-search" role="search">
+          <input type="search" placeholder="Suche" aria-label="Suche" />
+        </form>
+        <details class="menu">
+          <summary class="hamburger">☰ Menü</summary>
+          <div class="nav-links">
+            <a href="#leistungen">Leistungen</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#ablauf">Ablauf</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+        </details>
+      </nav>
+      <nav class="nav secondary-nav">
+        <div class="nav-links">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <a class="cta" href="#kontakt">Termin anfragen</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Premium Fahrzeugveredelung</p>
+        <h1>
+          Ambientebeleuchtung, Sternenhimmel & CarPlay
+          <span>für Ihr Fahrzeug in Perfektion</span>
+        </h1>
+        <p class="subhead">
+          Wir verwandeln Innenräume in emotionale Erlebniswelten. Maßgeschneidert,
+          sauber integriert und mit Liebe zum Detail.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#kontakt">Beratung anfordern</a>
+          <a class="button ghost" href="#leistungen">Unsere Leistungen</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="leistungen" class="section">
+        <div class="section-header">
+          <h2>Unsere Leistungen</h2>
+          <p>
+            Modernste Komponenten, OEM-nahe Integration und individuelle
+            Lichtkonzepte für jedes Fahrzeug.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Ambientebeleuchtung</h3>
+            <p>
+              Dynamische Lichtlinien, fein dimmbar und perfekt auf Ihr Interieur
+              abgestimmt. Mehr als 60 Farben & Szenen möglich.
+            </p>
+            <ul>
+              <li>Türleisten, Armaturen, Fußraum</li>
+              <li>App- & Remote-Steuerung</li>
+              <li>Sanftes Ein- & Ausblenden</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Sternenhimmel</h3>
+            <p>
+              Handverlegter Lichtfaserdeckenhimmel mit Sternbildern, Shooting
+              Stars oder sanftem Twinkle-Effekt.
+            </p>
+            <ul>
+              <li>Individuelle Muster</li>
+              <li>Mehrere Helligkeitsstufen</li>
+              <li>Perfekte Tageslichtoptik</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Apple CarPlay Nachrüstung</h3>
+            <p>
+              Kabellos oder kabelgebunden – wir rüsten CarPlay sauber nach und
+              integrieren es nahtlos in Ihr Infotainment.
+            </p>
+            <ul>
+              <li>Navigation, Musik & Nachrichten</li>
+              <li>Sprachsteuerung via Siri</li>
+              <li>OEM-Style Bedienung</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="galerie" class="section gallery">
+        <div class="section-header">
+          <h2>Emotionen, die bleiben</h2>
+          <p>
+            Hochwertige Materialien und ruhige Lichtlinien sorgen für ein
+            exklusives Fahrerlebnis bei Tag und Nacht.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <h4>Ambientebeleuchtung 360°</h4>
+            <p>Fließende Lichtkonturen und präzise Akzente.</p>
+          </div>
+          <div class="gallery-card">
+            <h4>Sternenhimmel Premium</h4>
+            <p>Atmosphäre wie unter freiem Himmel.</p>
+          </div>
+          <div class="gallery-card">
+            <h4>CarPlay Integration</h4>
+            <p>Alles vernetzt, alles griffbereit.</p>
+          </div>
+        </div>
+        <div class="gallery-images">
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung im Fahrzeug" />
+            <figcaption>Ambientebeleuchtung im Innenraum</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="Sternenhimmel Fahrzeughimmel" />
+            <figcaption>Sternenhimmel mit Twinkle-Effekt</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/hero.jpg.JPEG" alt="CarPlay Nachrüstung im Cockpit" />
+            <figcaption>CarPlay-Integration im Cockpit</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="ablauf" class="section steps">
+        <div class="section-header">
+          <h2>So läuft Ihr Projekt ab</h2>
+          <p>
+            Transparent, schnell und zuverlässig – von der Beratung bis zur
+            Übergabe.
+          </p>
+        </div>
+        <div class="steps-grid">
+          <div class="step">
+            <span>01</span>
+            <h4>Beratung & Konzept</h4>
+            <p>Wir analysieren Ihr Fahrzeug und definieren gemeinsam das Setup.</p>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <h4>Einbau & Feinschliff</h4>
+            <p>Saubere Verlegung, OEM-Style und absolute Liebe zum Detail.</p>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <h4>Übergabe & Support</h4>
+            <p>Einweisung in alle Funktionen und Support bei Fragen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section contact">
+        <div class="contact-card">
+          <div>
+            <h2>Jetzt Termin anfragen</h2>
+            <p>
+              Schreiben Sie uns für ein individuelles Angebot. Wir melden uns
+              innerhalb von 24 Stunden.
+            </p>
+            <div class="contact-info">
+              <div>
+                <span>Telefon</span>
+                <strong>+49 170 0000000</strong>
+              </div>
+              <div>
+                <span>E-Mail</span>
+                <strong>info@mtk-tuning.de</strong>
+              </div>
+              <div>
+                <span>Standort</span>
+                <strong>MTK Tuning, Bad Homburg</strong>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Vor- und Nachname" />
+            </label>
+            <label>
+              Fahrzeug
+              <input type="text" placeholder="Marke & Modell" />
+            </label>
+            <label>
+              Wunschleistung
+              <select>
+                <option>Ambientebeleuchtung</option>
+                <option>Sternenhimmel</option>
+                <option>CarPlay Nachrüstung</option>
+                <option>Kombination</option>
+              </select>
+            </label>
+            <label>
+              Nachricht
+              <textarea rows="4" placeholder="Beschreiben Sie Ihr Projekt"></textarea>
+            </label>
+            <button type="submit" class="button primary">Anfrage senden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>MTK Tuning</h4>
+        <p>Ambientebeleuchtung · Sternenhimmel · CarPlay</p>
+      </div>
+      <div class="footer-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="galerie.html">Galerie Upload</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+  </body>
+</html>
+styles.css
+Neu
++480
+-0
+
 :root {
-  color-scheme: light;
-  --bg: #ffffff;
-  --surface: #f5f7fb;
-  --surface-strong: #eef2f7;
-  --surface-glass: rgba(255, 255, 255, 0.9);
-  --accent: #2563eb;
-  --accent-strong: #7c3aed;
-  --accent-warm: #f59e0b;
-  --text: #0f172a;
-  --muted: #64748b;
-  --border: rgba(15, 23, 42, 0.12);
-  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  color-scheme: dark;
+  --bg: #05070c;
+  --surface: #0d1220;
+  --surface-strong: #121a2b;
+  --accent: #67d7ff;
+  --accent-strong: #4cf1ff;
+  --text: #f6f7ff;
+  --muted: #b4bccd;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -21,11 +264,10 @@
 
 body {
   font-family: "Montserrat", system-ui, sans-serif;
-  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 45%),
-    radial-gradient(circle at 20% 60%, rgba(124, 58, 237, 0.08), transparent 40%),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.6;
+  text-align: center;
 }
 
 a {
@@ -38,60 +280,34 @@ img {
   display: block;
 }
 
-h2 {
-  text-align: left;
-}
-
 .hero {
-  min-height: 95vh;
-  background: linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.82)),
+  min-height: 90vh;
+  background: linear-gradient(120deg, rgba(5, 7, 13, 0.92), rgba(7, 15, 28, 0.7)),
     url("images/hero.jpg.JPEG") center/cover no-repeat;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: clamp(2rem, 4vw, 3.5rem);
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 20%, rgba(37, 99, 235, 0.18), transparent 45%);
-  pointer-events: none;
-}
-
-.hero-shell {
-  position: relative;
-  z-index: 1;
-  width: min(1200px, 100% - 3rem);
-  margin: 0 auto;
-  display: grid;
-  gap: clamp(2rem, 5vw, 4rem);
-  padding-top: clamp(1.5rem, 4vw, 3rem);
+  gap: clamp(2rem, 6vw, 5rem);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  padding: 0.75rem 1.2rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  padding: 1rem clamp(1.5rem, 6vw, 6.5rem);
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .primary-nav {
-  backdrop-filter: blur(12px);
+  background: #000;
 }
 
 .secondary-nav {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(5, 7, 12, 0.85);
   border-bottom: none;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   justify-content: center;
   gap: 1.2rem;
 }
@@ -102,19 +318,19 @@ h2 {
 
 .logo {
   font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.18em;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
-  gap: 0.75rem;
+  gap: 1rem;
   flex-wrap: wrap;
   color: var(--muted);
   font-size: 0.95rem;
   justify-content: center;
-  margin-top: 0.6rem;
+  margin-top: 0.75rem;
 }
 
 .menu {
@@ -124,12 +340,11 @@ h2 {
 .hamburger {
   list-style: none;
   cursor: pointer;
-  padding: 0.55rem 1rem;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--text);
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.6);
 }
 
 .menu summary::-webkit-details-marker {
@@ -137,71 +352,63 @@ h2 {
 }
 
 .menu[open] .nav-links {
-  background: rgba(255, 255, 255, 0.98);
-  padding: 0.85rem 1rem;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav-search {
   flex: 1 1 220px;
-  max-width: 260px;
+  max-width: 320px;
 }
 
 .nav-search input {
   width: 100%;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  padding: 0.55rem 1rem;
-  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text);
 }
 
 .nav-links a {
-  padding: 0.35rem 0.7rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 999px;
 }
 
 .nav-links a:hover {
   color: var(--accent);
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .cta {
-  padding: 0.7rem 1.4rem;
+  padding: 0.75rem 1.4rem;
   border-radius: 999px;
   border: 1px solid var(--accent);
   color: var(--accent);
   font-weight: 600;
   white-space: nowrap;
-  background: rgba(37, 99, 235, 0.08);
-}
-
-.hero-grid {
-  display: grid;
-  gap: clamp(2rem, 5vw, 4rem);
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  align-items: center;
 }
 
 .hero-content {
+  max-width: 640px;
   display: grid;
   gap: 1.4rem;
-  text-align: left;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 6vw, 6.5rem) clamp(3rem, 6vw, 5rem);
 }
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.2em;
   color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 4.3vw, 4.2rem);
-  line-height: 1.05;
+  font-size: clamp(2.2rem, 3.6vw, 3.8rem);
+  line-height: 1.1;
   font-weight: 700;
 }
 
@@ -215,22 +422,22 @@ h2 {
 .subhead {
   color: var(--muted);
   font-size: 1.05rem;
-  max-width: 32rem;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .button {
-  padding: 0.85rem 1.6rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 999px;
   font-weight: 600;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -239,91 +446,33 @@ h2 {
 }
 
 .button.primary {
-  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
-  color: #ffffff;
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+  background: var(--accent);
+  color: #05070c;
 }
 
 .button.primary:hover {
-  transform: translateY(-2px);
+  background: var(--accent-strong);
 }
 
 .button.ghost {
-  border-color: rgba(15, 23, 42, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.hero-panel {
-  background: var(--surface-glass);
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  padding: clamp(1.5rem, 3vw, 2.2rem);
-  display: grid;
-  gap: 1.4rem;
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
-}
-
-.hero-highlight {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  align-items: start;
-}
-
-.hero-highlight span {
-  color: var(--accent-warm);
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem;
-}
-
-.hero-highlight strong {
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
-.hero-strip {
-  position: relative;
-  z-index: 1;
-  width: min(960px, 100% - 3rem);
-  margin: clamp(2rem, 4vw, 3rem) auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.2rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  padding: 1.4rem 1.8rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.hero-strip h3 {
-  font-size: 1.6rem;
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
-.hero-strip p {
-  color: var(--muted);
-  font-size: 0.9rem;
 }
 
 .section {
-  padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 6.5rem);
+  padding: clamp(3rem, 6vw, 5.5rem) clamp(1.5rem, 6vw, 6.5rem);
 }
 
 .section-header {
-  max-width: 720px;
+  max-width: 680px;
   margin-bottom: 2.5rem;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-header h2 {
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
   margin-bottom: 0.8rem;
-  text-align: left;
 }
 
 .section-header p {
@@ -340,9 +489,9 @@ h2 {
   background: var(--surface);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(103, 215, 255, 0.18);
   box-shadow: var(--shadow);
-  text-align: left;
+  text-align: center;
 }
 
 .card h3 {
@@ -363,7 +512,7 @@ h2 {
 }
 
 .gallery {
-  background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(226, 232, 240, 0.9));
+  background: linear-gradient(135deg, rgba(9, 14, 22, 0.95), rgba(4, 7, 12, 0.95));
 }
 
 .gallery-grid {
@@ -374,8 +523,8 @@ h2 {
 
 .gallery-card {
   padding: 2rem;
-  border-radius: 18px;
-  background: #ffffff;
+  border-radius: 16px;
+  background: rgba(8, 10, 16, 0.7);
   border: 1px solid var(--border);
 }
 
@@ -394,9 +543,9 @@ h2 {
 .gallery-item {
   border-radius: 18px;
   overflow: hidden;
-  background: #ffffff;
+  background: rgba(5, 8, 12, 0.7);
   border: 1px solid var(--border);
-  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
 }
 
 .gallery-item img {
@@ -419,26 +568,15 @@ h2 {
 
 .step {
   padding: 1.8rem;
-  border-radius: 16px;
-  background: #ffffff;
-  border: 1px solid var(--border);
-  position: relative;
-}
-
-.step::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  border: 1px solid rgba(37, 99, 235, 0.25);
-  opacity: 0.6;
-  pointer-events: none;
+  border-left: 2px solid var(--accent);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
 }
 
 .step span {
   font-size: 0.8rem;
   color: var(--accent);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.12em;
 }
 
 .step h4 {
@@ -450,7 +588,7 @@ h2 {
 }
 
 .contact {
-  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 60%);
+  background: radial-gradient(circle at top, rgba(103, 215, 255, 0.12), transparent 60%);
 }
 
 .contact-card {
@@ -460,16 +598,16 @@ h2 {
   background: var(--surface-strong);
   padding: clamp(2rem, 4vw, 3rem);
   border-radius: 24px;
-  border: 1px solid rgba(37, 99, 235, 0.18);
+  border: 1px solid rgba(103, 215, 255, 0.2);
   box-shadow: var(--shadow);
-  text-align: left;
+  text-align: center;
 }
 
 .contact-info {
   display: grid;
   gap: 1rem;
   margin-top: 1.5rem;
-  justify-items: start;
+  justify-items: center;
 }
 
 .contact-info span {
@@ -488,19 +626,20 @@ h2 {
   display: grid;
   gap: 0.4rem;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: center;
 }
 
 input,
 select,
 textarea {
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.7rem 0.9rem;
-  background: #ffffff;
+  background: rgba(5, 8, 12, 0.7);
   color: var(--text);
   font-family: inherit;
   width: 100%;
+  text-align: center;
 }
 
 textarea {
@@ -520,17 +659,16 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  background: #ffffff;
 }
 
 .footer-links {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .footer-links a {
@@ -540,12 +678,12 @@ textarea {
 
 .footer-links a:hover {
   color: var(--accent);
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 900px) {
   .nav {
-    border-radius: 20px;
+    align-items: flex-start;
   }
 
   .cta {
@@ -561,14 +699,6 @@ textarea {
   .button {
     width: 100%;
   }
-
-  .hero-strip {
-    text-align: center;
-  }
-
-  .footer {
-    justify-content: center;
-  }
 }
 
 @media (max-width: 600px) {
@@ -576,17 +706,13 @@ textarea {
     min-height: auto;
   }
 
-  .hero-shell {
-    width: min(100%, 100% - 2rem);
-  }
-
   .hero h1 {
-    font-size: clamp(2rem, 8vw, 2.6rem);
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
   }
 
   .nav-links {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .section-header {
@@ -595,20 +721,5 @@ textarea {
 
   .gallery-item img {
     height: 180px;
-  }
-
-  .section-header,
-  .hero-content,
-  .card,
-  .contact-card {
-    text-align: center;
-  }
-
-  .contact-info {
-    justify-items: center;
-  }
-
-  .footer-links {
-    justify-content: center;
   }
 }
