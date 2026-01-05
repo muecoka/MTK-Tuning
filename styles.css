@@ -37,6 +37,8 @@ img {
 
 .hero {
   min-height: 90vh;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 6vw, 6.5rem)
+    clamp(3rem, 6vw, 5rem);
   background: linear-gradient(120deg, rgba(5, 7, 13, 0.92), rgba(7, 15, 28, 0.7)),
     url("images/hero.jpg.JPEG") center/cover no-repeat;
   display: flex;
@@ -50,10 +52,6 @@ img {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  background: #000;
-  padding: 1rem clamp(1.5rem, 6vw, 6.5rem);
-  width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .logo {
@@ -70,46 +68,6 @@ img {
   color: var(--muted);
   font-size: 0.95rem;
   justify-content: center;
-  margin-top: 0.75rem;
-}
-
-.menu {
-  position: relative;
-}
-
-.hamburger {
-  list-style: none;
-  cursor: pointer;
-  padding: 0.65rem 1rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--text);
-  font-weight: 600;
-}
-
-.menu summary::-webkit-details-marker {
-  display: none;
-}
-
-.menu[open] .nav-links {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.nav-search {
-  flex: 1 1 220px;
-  max-width: 320px;
-}
-
-.nav-search input {
-  width: 100%;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0.6rem 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text);
 }
 
 .nav-links a {
@@ -136,7 +94,6 @@ img {
   display: grid;
   gap: 1.4rem;
   margin: 0 auto;
-  padding: 0 clamp(1.5rem, 6vw, 6.5rem) clamp(3rem, 6vw, 5rem);
 }
 
 .eyebrow {
@@ -168,8 +125,6 @@ img {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .button {
