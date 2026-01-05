@@ -49,6 +49,7 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: column;
+codex/redesign-website-layout
   justify-content: space-between;
   padding-bottom: clamp(2rem, 4vw, 3.5rem);
 }
@@ -69,6 +70,11 @@ h2 {
   display: grid;
   gap: clamp(2rem, 5vw, 4rem);
   padding-top: clamp(1.5rem, 4vw, 3rem);
+=======
+  gap: clamp(2rem, 6vw, 5rem);
+  justify-content: center;
+  align-items: stretch;
+MTK-Tuning
 }
 
 .nav {
