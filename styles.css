@@ -22,6 +22,8 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  text-align: center;
+  user-select: text;
 }
 
 a {
@@ -84,6 +86,13 @@ img {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -231,6 +240,7 @@ img {
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .section-header h2 {
@@ -289,6 +299,7 @@ img {
   border-radius: 16px;
   background: rgba(8, 10, 16, 0.7);
   border: 1px solid var(--border);
+  text-align: center;
 }
 
 .gallery-card h4 {
@@ -334,6 +345,7 @@ img {
   border-left: 2px solid var(--accent);
   background: rgba(255, 255, 255, 0.02);
   border-radius: 12px;
+  text-align: center;
 }
 
 .step span {
@@ -425,6 +437,7 @@ textarea {
   justify-content: center;
   border-top: 1px solid var(--border);
   color: var(--muted);
+  text-align: center;
 }
 
 .footer-links {
@@ -485,17 +498,6 @@ textarea {
   .gallery-item img {
     height: 180px;
   }
-  .logo {
-  display: flex;
-  align-items: center;
-  }
-
-.logo img {
-  height: 32px;   /* Desktop – sauber & lesbar */
-  width: auto;
-  display: block;
-  }
-  @media (max-width: 600px) {
   .logo img {
     height: 28px;
   }
