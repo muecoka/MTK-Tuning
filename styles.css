@@ -619,7 +619,11 @@ textarea {
   margin-top: 2.5rem;
   display: grid;
   gap: 1rem;
-  max-width: 320px;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
 }
 
 .brand-link {
@@ -629,8 +633,9 @@ textarea {
   background: rgba(8, 12, 22, 0.75);
   color: var(--text);
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   transition: all 0.2s ease;
+  width: 100%;
 }
 
 .brand-link:hover {
@@ -703,6 +708,11 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .brand-column {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    max-width: 520px;
+  }
+
   .nav {
     align-items: flex-start;
   }
@@ -733,6 +743,11 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .brand-column {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
   .footer {
     grid-template-columns: 1fr;
     justify-items: center;
