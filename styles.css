@@ -535,8 +535,184 @@ textarea {
   fill: var(--accent);
 }
 
+.sternenhimmel-page {
+  text-align: left;
+}
+
+.sternenhimmel-hero {
+  position: relative;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6.5rem);
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.stars-content {
+  max-width: 560px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.starfield {
+  position: absolute;
+  inset: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 28px;
+  overflow: hidden;
+  background: radial-gradient(circle at top, rgba(103, 215, 255, 0.12), transparent 55%),
+    linear-gradient(140deg, rgba(8, 12, 24, 0.95), rgba(3, 6, 12, 0.95));
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.star-layer {
+  position: absolute;
+  inset: -10%;
+  background-repeat: repeat;
+  background-size: 160px 160px;
+  opacity: 0.65;
+  animation: star-drift 32s linear infinite;
+}
+
+.layer-one {
+  background-image: radial-gradient(#f6f7ff 1px, transparent 1px);
+}
+
+.layer-two {
+  background-image: radial-gradient(#9ad8ff 1.4px, transparent 1.4px);
+  background-size: 220px 220px;
+  opacity: 0.45;
+  animation-duration: 48s;
+}
+
+.layer-three {
+  background-image: radial-gradient(#ffffff 2px, transparent 2px);
+  background-size: 320px 320px;
+  opacity: 0.3;
+  animation-duration: 70s;
+}
+
+.star-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(103, 215, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.12), transparent 50%);
+  mix-blend-mode: screen;
+  animation: twinkle 6s ease-in-out infinite;
+}
+
+.sternenhimmel-details {
+  background: linear-gradient(135deg, rgba(8, 12, 20, 0.92), rgba(5, 7, 12, 0.95));
+}
+
+.brand-page {
+  text-align: left;
+}
+
+.brand-hero {
+  min-height: 70vh;
+}
+
+.brand-column {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.brand-link {
+  padding: 0.9rem 1.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(103, 215, 255, 0.35);
+  background: rgba(8, 12, 22, 0.75);
+  color: var(--text);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.brand-link:hover {
+  border-color: var(--accent);
+  background: rgba(103, 215, 255, 0.1);
+  color: var(--accent);
+}
+
+.model-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.model-card {
+  background: rgba(8, 12, 22, 0.8);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+  display: grid;
+}
+
+.model-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.model-info {
+  padding: 1.2rem 1.4rem 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.model-info h3 {
+  color: var(--accent-strong);
+}
+
+.model-info p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.brand-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@keyframes star-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-8%, 6%, 0);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
 
 @media (max-width: 900px) {
+  .brand-column {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    max-width: 520px;
+  }
+
   .nav {
     align-items: flex-start;
   }
@@ -567,6 +743,11 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .brand-column {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
   .footer {
     grid-template-columns: 1fr;
     justify-items: center;
