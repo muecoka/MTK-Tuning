@@ -520,7 +520,7 @@ textarea {
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
-  min-height: 420px;
+  min-height: 320px;
 }
 
 .map-wrapper iframe {
@@ -560,17 +560,19 @@ textarea {
 
 .reviews-slider {
   overflow: hidden;
+  --review-gap: 1.5rem;
+  --review-width: calc((100% - (var(--review-gap) * 2)) / 3);
 }
 
 .reviews-track {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(240px, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  gap: var(--review-gap);
+  width: calc((var(--review-width) * 6) + (var(--review-gap) * 5));
   animation: reviews-slide 10s ease-in-out infinite;
 }
 
 .review {
+  flex: 0 0 var(--review-width);
   padding: 1rem;
   border-radius: 16px;
   background: rgba(5, 8, 12, 0.6);
@@ -602,10 +604,10 @@ textarea {
     transform: translateX(0);
   }
   60% {
-    transform: translateX(calc(-100% - 1.5rem));
+    transform: translateX(calc(-1 * ((var(--review-width) * 3) + (var(--review-gap) * 3))));
   }
   100% {
-    transform: translateX(calc(-100% - 1.5rem));
+    transform: translateX(calc(-1 * ((var(--review-width) * 3) + (var(--review-gap) * 3))));
   }
 }
 
