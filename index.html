@@ -13,16 +13,38 @@
     />
   </head>
   <body>
+    <header class="top-header">
+      <div class="top-header-inner">
+        <a class="logo-link" href="index.html">
+          <img class="logo-image" src="images/logo.jpg.png" alt="MTK Tuning Logo" />
+        </a>
+        <form class="header-search" action="index.html" method="get">
+          <input
+            type="search"
+            name="q"
+            placeholder="Suche..."
+            aria-label="Website durchsuchen"
+          />
+        </form>
+        <div class="hamburger-menu">
+          <button class="hamburger" type="button" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu-dropdown" aria-label="Hauptmenü">
+            <a href="#leistungen">Leistungen</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#ambientebeleuchtung">Ambientebeleuchtung</a>
+            <a href="#sternenhimmel">Sternenhimmel</a>
+            <a href="#carplay">CarPlay</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <header class="hero">
       <nav class="nav">
-        <div class="logo">MTK Tuning</div>
-        <div class="nav-links">
-          <a href="#leistungen">Leistungen</a>
-          <a href="#galerie">Galerie</a>
-          <a href="#ablauf">Ablauf</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
-        <a class="cta" href="#kontakt">Termin anfragen</a>
       </nav>
       <div class="hero-content">
         <p class="eyebrow">Premium Fahrzeugveredelung</p>
@@ -51,7 +73,7 @@
           </p>
         </div>
         <div class="card-grid">
-          <article class="card">
+          <article class="card" id="ambientebeleuchtung">
             <h3>Ambientebeleuchtung</h3>
             <p>
               Dynamische Lichtlinien, fein dimmbar und perfekt auf Ihr Interieur
@@ -63,7 +85,7 @@
               <li>Sanftes Ein- & Ausblenden</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card" id="sternenhimmel">
             <h3>Sternenhimmel</h3>
             <p>
               Handverlegter Lichtfaserdeckenhimmel mit Sternbildern, Shooting
@@ -75,7 +97,7 @@
               <li>Perfekte Tageslichtoptik</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card" id="carplay">
             <h3>Apple CarPlay Nachrüstung</h3>
             <p>
               Kabellos oder kabelgebunden – wir rüsten CarPlay sauber nach und
@@ -207,10 +229,6 @@
     </main>
 
     <footer class="footer">
-      <div>
-        <h4>MTK Tuning</h4>
-        <p>Ambientebeleuchtung · Sternenhimmel · CarPlay</p>
-      </div>
       <div class="footer-links">
         <a href="#leistungen">Leistungen</a>
         <a href="#galerie">Galerie</a>
@@ -222,5 +240,24 @@
         <a href="datenschutz.html">Datenschutz</a>
       </div>
     </footer>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("q");
+      if (query) {
+        const normalized = query.trim().toLowerCase();
+        if (normalized) {
+          const candidates = document.querySelectorAll(
+            "main h2, main h3, main h4, main p, main li"
+          );
+          const match = Array.from(candidates).find((element) =>
+            element.textContent.toLowerCase().includes(normalized)
+          );
+          if (match) {
+            match.scrollIntoView({ behavior: "smooth", block: "center" });
+            match.classList.add("search-highlight");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
