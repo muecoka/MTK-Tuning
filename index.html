@@ -18,11 +18,21 @@
         <a class="logo-link" href="index.html">
           <img class="logo-image" src="images/logo.jpg.png" alt="MTK Tuning Logo" />
         </a>
-        <button class="hamburger" type="button" aria-label="Menü öffnen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="hamburger-menu">
+          <button class="hamburger" type="button" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu-dropdown" aria-label="Hauptmenü">
+            <a href="#leistungen">Leistungen</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#ambientebeleuchtung">Ambientebeleuchtung</a>
+            <a href="#sternenhimmel">Sternenhimmel</a>
+            <a href="#carplay">CarPlay</a>
+          </div>
+        </div>
       </div>
     </header>
     <header class="hero">
@@ -55,7 +65,7 @@
           </p>
         </div>
         <div class="card-grid">
-          <article class="card">
+          <article class="card" id="ambientebeleuchtung">
             <h3>Ambientebeleuchtung</h3>
             <p>
               Dynamische Lichtlinien, fein dimmbar und perfekt auf Ihr Interieur
@@ -67,7 +77,7 @@
               <li>Sanftes Ein- & Ausblenden</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card" id="sternenhimmel">
             <h3>Sternenhimmel</h3>
             <p>
               Handverlegter Lichtfaserdeckenhimmel mit Sternbildern, Shooting
@@ -79,7 +89,7 @@
               <li>Perfekte Tageslichtoptik</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card" id="carplay">
             <h3>Apple CarPlay Nachrüstung</h3>
             <p>
               Kabellos oder kabelgebunden – wir rüsten CarPlay sauber nach und
