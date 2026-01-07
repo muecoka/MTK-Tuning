@@ -478,7 +478,12 @@ textarea {
   justify-content: space-between;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  text-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-meta {
+  font-size: 0.9rem;
 }
 
 .footer-links {
@@ -486,7 +491,7 @@ textarea {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: auto;
 }
 
 .footer-links a {
@@ -503,7 +508,7 @@ textarea {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
-  width: 100%;
+  width: auto;
 }
 
 .social-links a {
@@ -563,6 +568,15 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links,
+  .social-links {
+    justify-content: center;
+  }
   .top-header-inner {
     padding: 0.75rem 1.25rem;
   }
