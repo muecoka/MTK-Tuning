@@ -18,6 +18,14 @@
         <a class="logo-link" href="index.html">
           <img class="logo-image" src="images/logo.jpg.png" alt="MTK Tuning Logo" />
         </a>
+        <form class="header-search" action="index.html" method="get">
+          <input
+            type="search"
+            name="q"
+            placeholder="Suche..."
+            aria-label="Website durchsuchen"
+          />
+        </form>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -232,5 +240,24 @@
         <a href="datenschutz.html">Datenschutz</a>
       </div>
     </footer>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("q");
+      if (query) {
+        const normalized = query.trim().toLowerCase();
+        if (normalized) {
+          const candidates = document.querySelectorAll(
+            "main h2, main h3, main h4, main p, main li"
+          );
+          const match = Array.from(candidates).find((element) =>
+            element.textContent.toLowerCase().includes(normalized)
+          );
+          if (match) {
+            match.scrollIntoView({ behavior: "smooth", block: "center" });
+            match.classList.add("search-highlight");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
