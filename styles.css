@@ -555,6 +555,8 @@ textarea {
   z-index: 2;
   display: grid;
   gap: 1.2rem;
+  text-align: center;
+  justify-items: center;
 }
 
 .starfield {
@@ -613,6 +615,10 @@ textarea {
 
 .brand-hero {
   min-height: 70vh;
+}
+
+.brand-hero .section-header {
+  text-align: center;
 }
 
 .brand-column {
