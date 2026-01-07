@@ -473,6 +473,12 @@ textarea {
 
   .hero {
     padding-bottom: 2.5rem;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin-top: 0;
   }
 
   .cta {
