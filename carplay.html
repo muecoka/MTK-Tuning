@@ -101,7 +101,36 @@
           <a class="button primary" href="index.html#kontakt">Beratung anfragen</a>
         </div>
       </section>
+
+      <section class="section product-gallery">
+        <div class="section-header">
+          <h2>Galerie CarPlay</h2>
+          <p>Einblicke in unsere CarPlay-Nachrüstungen und die Bedienoberflächen.</p>
+        </div>
+        <div class="product-gallery-box">
+          <div class="product-gallery-grid">
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="CarPlay Darstellung im OEM-Display" />
+            </button>
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="CarPlay Menü mit Navigation und Musik" />
+            </button>
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="CarPlay Bedienung über Lenkradtasten" />
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Galerie">
+        <button class="lightbox-close" type="button" aria-label="Galerie schließen">×</button>
+        <button class="lightbox-nav prev" type="button" aria-label="Vorheriges Bild">‹</button>
+        <img class="lightbox-image" src="" alt="" />
+        <button class="lightbox-nav next" type="button" aria-label="Nächstes Bild">›</button>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-meta">© 2026 MTK Tuning</div>
@@ -143,6 +172,7 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/gallery.js"></script>
       <script src="scripts/cart.js"></script>
   </body>
 </html>
