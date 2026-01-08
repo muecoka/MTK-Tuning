@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -58,58 +61,28 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Audi A4 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Audi A4</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Audi%20A4&price=449&type=ambient">Audi A4</a></h3>
               <p>Feine Lichtlinien entlang der Türleisten für eine klare Premium-Optik.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Audi%20A4&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Audi A6 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Audi A6</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Audi%20A6&price=499&type=ambient">Audi A6</a></h3>
               <p>Mehrzonen-Setup mit sanften Übergängen im Dashboard und Fußraum.</p>
               <div class="price">ab 499 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Audi%20A6&price=499&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Audi Q5 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Audi Q5</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Audi%20Q5&price=549&type=ambient">Audi Q5</a></h3>
               <p>Warme Konturen im Innenraum für ein ruhiges, hochwertiges Raumgefühl.</p>
               <div class="price">ab 549 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Audi%20Q5&price=549&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -160,5 +133,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

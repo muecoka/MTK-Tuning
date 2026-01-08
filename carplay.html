@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -58,33 +61,37 @@
           <article class="carplay-card">
             <img src="images/hero.jpg.JPEG" alt="BMW CarPlay Nachrüstung" />
             <div class="carplay-info">
-              <h3>BMW</h3>
+              <h3><a class="model-link" href="model-detail.html?name=CarPlay%20BMW&price=799&type=carplay">CarPlay BMW</a></h3>
               <p>Nahtlose Integration ins OEM-Display inklusive kabelloser Option.</p>
               <div class="price">ab 799 €</div>
+              <a class="button ghost" href="model-detail.html?name=CarPlay%20BMW&price=799&type=carplay">Konfigurieren</a>
             </div>
           </article>
           <article class="carplay-card">
             <img src="images/hero.jpg.JPEG" alt="Audi CarPlay Nachrüstung" />
             <div class="carplay-info">
-              <h3>Audi</h3>
+              <h3><a class="model-link" href="model-detail.html?name=CarPlay%20Audi&price=749&type=carplay">CarPlay Audi</a></h3>
               <p>Volle CarPlay-Funktionen mit MMI-Steuerung und OEM-Optik.</p>
               <div class="price">ab 749 €</div>
+              <a class="button ghost" href="model-detail.html?name=CarPlay%20Audi&price=749&type=carplay">Konfigurieren</a>
             </div>
           </article>
           <article class="carplay-card">
             <img src="images/hero.jpg.JPEG" alt="Volkswagen CarPlay Nachrüstung" />
             <div class="carplay-info">
-              <h3>VW</h3>
+              <h3><a class="model-link" href="model-detail.html?name=CarPlay%20VW&price=699&type=carplay">CarPlay VW</a></h3>
               <p>Saubere Nachrüstung mit Touch- und Lenkradbedienung.</p>
               <div class="price">ab 699 €</div>
+              <a class="button ghost" href="model-detail.html?name=CarPlay%20VW&price=699&type=carplay">Konfigurieren</a>
             </div>
           </article>
           <article class="carplay-card">
             <img src="images/hero.jpg.JPEG" alt="Mercedes-Benz CarPlay Nachrüstung" />
             <div class="carplay-info">
-              <h3>Mercedes</h3>
+              <h3><a class="model-link" href="model-detail.html?name=CarPlay%20Mercedes&price=849&type=carplay">CarPlay Mercedes</a></h3>
               <p>Premium-Setup mit schneller Verbindung und harmonischer Bedienung.</p>
               <div class="price">ab 849 €</div>
+              <a class="button ghost" href="model-detail.html?name=CarPlay%20Mercedes&price=849&type=carplay">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -135,5 +142,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

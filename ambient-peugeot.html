@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -57,58 +60,28 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Peugeot 308 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>308</h3>
+              <h3><a class="model-link" href="model-detail.html?name=308&price=449&type=ambient">308</a></h3>
               <p>Klare Lichtlinien für ein modernes i-Cockpit.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=308&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Peugeot 508 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>508</h3>
+              <h3><a class="model-link" href="model-detail.html?name=508&price=499&type=ambient">508</a></h3>
               <p>Luxuriöse Beleuchtung mit weichen Übergängen.</p>
               <div class="price">ab 499 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=508&price=499&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Peugeot 3008 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>3008</h3>
+              <h3><a class="model-link" href="model-detail.html?name=3008&price=549&type=ambient">3008</a></h3>
               <p>Akzentbeleuchtung für einen markanten SUV-Innenraum.</p>
               <div class="price">ab 549 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=3008&price=549&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -159,5 +132,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

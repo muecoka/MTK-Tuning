@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -57,58 +60,28 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Honda Civic Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Civic</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Civic&price=449&type=ambient">Civic</a></h3>
               <p>Sportliche Akzentlinien in Türen und Armatur.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Civic&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Honda Accord Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Accord</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Accord&price=499&type=ambient">Accord</a></h3>
               <p>Ruhe und Eleganz durch feine Lichtverläufe.</p>
               <div class="price">ab 499 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Accord&price=499&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Honda CR-V Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>CR-V</h3>
+              <h3><a class="model-link" href="model-detail.html?name=CR-V&price=549&type=ambient">CR-V</a></h3>
               <p>Sanfte Lichtflächen für entspannte SUV-Atmosphäre.</p>
               <div class="price">ab 549 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=CR-V&price=549&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -159,5 +132,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -57,58 +60,28 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Kia Ceed Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Ceed</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Ceed&price=449&type=ambient">Ceed</a></h3>
               <p>Dezente Akzentlinien für ein cleanes Innenraumgefühl.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Ceed&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Kia Sportage Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Sportage</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Sportage&price=499&type=ambient">Sportage</a></h3>
               <p>Mehrzonen-Licht für eine hochwertige SUV-Atmosphäre.</p>
               <div class="price">ab 499 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Sportage&price=499&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Kia EV6 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>EV6</h3>
+              <h3><a class="model-link" href="model-detail.html?name=EV6&price=549&type=ambient">EV6</a></h3>
               <p>Lichtinszenierung mit futuristischem Charakter.</p>
               <div class="price">ab 549 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=EV6&price=549&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -159,5 +132,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

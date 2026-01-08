@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -63,6 +66,39 @@
           <span class="star-layer layer-two"></span>
           <span class="star-layer layer-three"></span>
           <span class="star-glow"></span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Sternenhimmel konfigurieren</h2>
+          <p>
+            Wählen Sie das Sternenhimmel-Paket aus und konfigurieren Sie es nach
+            Ihren Wünschen.
+          </p>
+        </div>
+        <div class="model-grid">
+          <article class="model-card">
+            <img src="images/hero.jpg.JPEG" alt="Sternenhimmel Premium Paket" />
+            <div class="model-info">
+              <h3>
+                <a
+                  class="model-link"
+                  href="model-detail.html?name=Sternenhimmel%20Premium&price=1290&type=sternenhimmel"
+                >
+                  Sternenhimmel Premium
+                </a>
+              </h3>
+              <p>Twinkle-Effekt, Shooting-Stars und individuelle Sternbilder.</p>
+              <div class="price">ab 1290 €</div>
+              <a
+                class="button ghost"
+                href="model-detail.html?name=Sternenhimmel%20Premium&price=1290&type=sternenhimmel"
+              >
+                Konfigurieren
+              </a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -140,5 +176,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

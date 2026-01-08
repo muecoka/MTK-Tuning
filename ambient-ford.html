@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -57,58 +60,28 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Ford Focus Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Focus</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Focus&price=449&type=ambient">Focus</a></h3>
               <p>Sportliche Linien entlang der Mittelkonsole.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Focus&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Ford Mondeo Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Mondeo</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Mondeo&price=499&type=ambient">Mondeo</a></h3>
               <p>Elegante Lichtflächen für eine ruhige Premium-Optik.</p>
               <div class="price">ab 499 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Mondeo&price=499&type=ambient">Konfigurieren</a>
             </div>
           </article>
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="Ford Kuga Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>Kuga</h3>
+              <h3><a class="model-link" href="model-detail.html?name=Kuga&price=549&type=ambient">Kuga</a></h3>
               <p>Warme Akzente für den SUV-Innenraum.</p>
               <div class="price">ab 549 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=Kuga&price=549&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -159,5 +132,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>

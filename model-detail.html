@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MTK Tuning | Ambientebeleuchtung Marken</title>
+    <title>MTK Tuning | Konfiguration</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,55 +26,63 @@
             aria-label="Website durchsuchen"
           />
         </form>
-        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          <a class="cart-link" href="cart.html" aria-label="Warenkorb">
           🛒 <span class="cart-count">0</span>
         </a>
         <div class="hamburger-menu">
-          <button class="hamburger" type="button" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="menu-dropdown" aria-label="Hauptmenü">
-            <a href="index.html#leistungen">Leistungen</a>
-            <a href="index.html#galerie">Galerie</a>
-            <a href="index.html#kontakt">Kontakt</a>
-            <a href="sternenhimmel.html">Sternenhimmel</a>
-            <a href="ambient.html">Ambientebeleuchtung</a>
-            <a href="carplay.html">CarPlay</a>
-          </div>
+            <button class="hamburger" type="button" aria-label="Menü öffnen">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="menu-dropdown" aria-label="Hauptmenü">
+              <a href="index.html#leistungen">Leistungen</a>
+              <a href="index.html#galerie">Galerie</a>
+              <a href="index.html#kontakt">Kontakt</a>
+              <a href="sternenhimmel.html">Sternenhimmel</a>
+              <a href="ambient.html">Ambientebeleuchtung</a>
+              <a href="carplay.html">CarPlay</a>
+              </div>
         </div>
       </div>
     </header>
 
-    <main class="brand-page">
-      <section class="section brand-hero">
+    <main class="config-page">
+      <section class="section config-hero">
         <div class="section-header">
-          <p class="eyebrow">Ambientebeleuchtung</p>
-          <h1>Alle Automarken im Überblick</h1>
-          <p>
-            Wählen Sie Ihre Marke aus. Jede Marke führt zu einer eigenen Seite mit
-            passenden Modellen, Bildern und einer kurzen Beschreibung.
-          </p>
+          <p class="eyebrow" id="product-type">ambient</p>
+          <h1 id="product-name">Produkt</h1>
+          <p>Bruttopreise inkl. 20% MwSt. – Konfiguration sofort sichtbar.</p>
         </div>
-        <div class="brand-column">
-          <a class="brand-link" href="ambient-audi.html">Audi</a>
-          <a class="brand-link" href="ambient-bmw.html">BMW</a>
-          <a class="brand-link" href="ambient-mercedes.html">Mercedes-Benz</a>
-          <a class="brand-link" href="ambient-vw.html">Volkswagen</a>
-          <a class="brand-link" href="ambient-seat.html">Seat</a>
-          <a class="brand-link" href="ambient-skoda.html">Škoda</a>
-          <a class="brand-link" href="ambient-porsche.html">Porsche</a>
-          <a class="brand-link" href="ambient-hyundai.html">Hyundai</a>
-          <a class="brand-link" href="ambient-kia.html">Kia</a>
-          <a class="brand-link" href="ambient-ford.html">Ford</a>
-          <a class="brand-link" href="ambient-mazda.html">Mazda</a>
-          <a class="brand-link" href="ambient-peugeot.html">Peugeot</a>
-          <a class="brand-link" href="ambient-honda.html">Honda</a>
-          <a class="brand-link" href="ambient-toyota.html">Toyota</a>
+        <div class="config-grid">
+          <div class="config-panel">
+            <h2>Konfiguration</h2>
+            <div class="config-options" id="config-options"></div>
+            <div class="config-summary" id="config-summary"></div>
+            <button class="button primary" id="add-to-cart">In den Warenkorb</button>
+          </div>
+          <div class="config-panel">
+            <h2>Galerie</h2>
+            <p>Tippen Sie auf ein Bild, um die Galerie zu öffnen.</p>
+            <div class="detail-gallery">
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 1" />
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 2" />
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 3" />
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 4" />
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 5" />
+              <img src="images/hero.jpg.JPEG" alt="Detailansicht 6" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <div class="modal" id="gallery-modal" aria-hidden="true">
+      <button class="close" type="button">×</button>
+      <button class="prev" type="button">‹</button>
+      <img src="" alt="Galerie" />
+      <button class="next" type="button">›</button>
+    </div>
 
     <footer class="footer">
       <div class="footer-meta">© 2026 MTK Tuning</div>
@@ -116,6 +124,7 @@
         </a>
       </div>
     </footer>
-      <script src="scripts/cart.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/model-detail.js"></script>
   </body>
 </html>

@@ -26,6 +26,9 @@
             aria-label="Website durchsuchen"
           />
         </form>
+        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+          🛒 <span class="cart-count">0</span>
+        </a>
         <div class="hamburger-menu">
           <button class="hamburger" type="button" aria-label="Menü öffnen">
             <span></span>
@@ -55,20 +58,10 @@
           <article class="model-card">
             <img src="images/hero.jpg.JPEG" alt="BMW 2er F22/F23 Ambientebeleuchtung" />
             <div class="model-info">
-              <h3>BMW 2er F22/F23</h3>
+              <h3><a class="model-link" href="model-detail.html?name=BMW%202er%20F22/F23&price=449&type=ambient">BMW 2er F22/F23</a></h3>
               <p>Kompakte Lichtlinien für einen dynamischen Innenraum.</p>
               <div class="price">ab 449 €</div>
-              <details class="model-gallery">
-                <summary>5 Bilder anzeigen</summary>
-                <p class="gallery-description">Detailaufnahmen der Ambientebeleuchtung aus verschiedenen Blickwinkeln.</p>
-                <div class="gallery-grid">
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 1" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 2" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 3" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 4" />
-                  <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung Detail 5" />
-                </div>
-              </details>
+              <a class="button ghost" href="model-detail.html?name=BMW%202er%20F22/F23&price=449&type=ambient">Konfigurieren</a>
             </div>
           </article>
         </div>
@@ -119,5 +112,6 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/cart.js"></script>
   </body>
 </html>
