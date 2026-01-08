@@ -20,6 +20,20 @@ const updateCartCount = () => {
   });
 };
 
+const injectCartLink = () => {
+  document.querySelectorAll(".top-header-inner").forEach((header) => {
+    if (header.querySelector(".cart-link")) return;
+    const menu = header.querySelector(".hamburger-menu");
+    if (!menu) return;
+    const cart = document.createElement("a");
+    cart.className = "cart-link";
+    cart.href = "cart.html";
+    cart.setAttribute("aria-label", "Warenkorb");
+    cart.innerHTML = '🛒 <span class="cart-count">0</span>';
+    header.insertBefore(cart, menu);
+  });
+};
+
 const addToCart = (item) => {
   const items = loadCart();
   items.push(item);
@@ -122,6 +136,7 @@ window.cartUtils = {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
+  injectCartLink();
   updateCartCount();
   renderCart();
   initCartButtons();
