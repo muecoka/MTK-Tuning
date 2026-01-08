@@ -332,6 +332,9 @@ img {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .gallery-card {
