@@ -151,7 +151,9 @@ img {
   min-height: 90vh;
   padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 6vw, 6.5rem)
     clamp(3rem, 6vw, 5rem);
-  background: linear-gradient(120deg, rgba(5, 7, 13, 0.92), rgba(7, 15, 28, 0.7));
+  background:
+    radial-gradient(circle at top left, rgba(103, 215, 255, 0.12), transparent 45%),
+    linear-gradient(120deg, rgba(5, 7, 13, 0.95), rgba(7, 15, 28, 0.7));
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 6vw, 5rem);
@@ -210,6 +212,54 @@ img {
   display: grid;
   gap: 1.4rem;
   margin: 0 auto;
+  text-align: left;
+}
+
+.hero-layout {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.hero-badges span {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(103, 215, 255, 0.35);
+  background: rgba(8, 12, 22, 0.7);
+  font-size: 0.85rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hero-stats div {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 12, 22, 0.6);
+  text-align: left;
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--accent-strong);
+}
+
+.hero-stats span {
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .eyebrow {
@@ -241,7 +291,7 @@ img {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .button {
@@ -269,6 +319,56 @@ img {
 .button.ghost {
   border-color: rgba(255, 255, 255, 0.3);
   color: var(--text);
+}
+
+.hero-panel {
+  display: grid;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.panel-card {
+  padding: 1.8rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(8, 12, 22, 0.8);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.panel-card ul {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.panel-card ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.panel-card ul li::before {
+  content: "✓";
+  color: var(--accent);
+  margin-right: 0.6rem;
+}
+
+.panel-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.panel-card.accent {
+  background: linear-gradient(140deg, rgba(103, 215, 255, 0.15), rgba(8, 12, 22, 0.8));
+  border-color: rgba(103, 215, 255, 0.4);
+  display: grid;
+  gap: 1rem;
 }
 
 .section {
