@@ -58,6 +58,56 @@
   max-height: 80vh;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 6, 10, 0.85);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal button {
+  position: absolute;
+  border: none;
+  background: rgba(11, 16, 24, 0.85);
+  color: #fff;
+  font-size: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.modal .close {
+  top: 3vh;
+  right: 3vw;
+  font-size: 1.6rem;
+}
+
+.modal .prev {
+  left: 3vw;
+}
+
+.modal .next {
+  right: 3vw;
+}
+
+.modal button:focus-visible {
+  outline: 2px solid var(--accent);
+}
+
 @media (max-width: 900px) {
   .detail-gallery {
     grid-template-columns: repeat(3, minmax(60px, 1fr));
