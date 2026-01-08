@@ -75,7 +75,35 @@
           <a class="brand-link" href="ambient-toyota.html">Toyota</a>
         </div>
       </section>
+      <section class="section product-gallery">
+        <div class="section-header">
+          <h2>Galerie Ambientebeleuchtung</h2>
+          <p>Entdecken Sie Eindrücke aus der Ambientebeleuchtung in verschiedenen Fahrzeugen.</p>
+        </div>
+        <div class="product-gallery-box">
+          <div class="product-gallery-grid">
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung in der Mittelkonsole" />
+            </button>
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung in den Türen" />
+            </button>
+            <button class="product-gallery-item" type="button">
+              <img src="images/hero.jpg.JPEG" alt="Ambientebeleuchtung im Fußraum" />
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Galerie">
+        <button class="lightbox-close" type="button" aria-label="Galerie schließen">×</button>
+        <button class="lightbox-nav prev" type="button" aria-label="Vorheriges Bild">‹</button>
+        <img class="lightbox-image" src="" alt="" />
+        <button class="lightbox-nav next" type="button" aria-label="Nächstes Bild">›</button>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-meta">© 2026 MTK Tuning</div>
@@ -117,6 +145,7 @@
         </a>
       </div>
     </footer>
+      <script src="scripts/gallery.js"></script>
       <script src="scripts/cart.js"></script>
   </body>
 </html>
