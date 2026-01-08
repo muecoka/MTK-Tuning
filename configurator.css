@@ -41,7 +41,9 @@
   border-radius: 18px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  grid-template-columns: repeat(6, minmax(60px, 1fr));
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .detail-gallery img {
