@@ -687,6 +687,21 @@ textarea {
   font-size: 0.95rem;
 }
 
+.model-section {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.model-section:first-of-type {
+  margin-top: 0;
+}
+
+.model-section h2 {
+  font-size: 1.6rem;
+  color: var(--accent-strong);
+}
+
 .model-gallery {
   margin-top: 0.9rem;
   display: grid;
