@@ -687,6 +687,37 @@ textarea {
   font-size: 0.95rem;
 }
 
+.model-gallery {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.model-gallery summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.gallery-description {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(5, minmax(60px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .brand-actions {
   margin-top: 2rem;
   display: flex;
@@ -764,6 +795,10 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+  }
+
   .carplay-grid {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
@@ -803,6 +838,10 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(60px, 1fr));
+  }
+
   .carplay-grid {
     grid-template-columns: 1fr;
   }
