@@ -19,30 +19,30 @@
         <a class="logo-link" href="index.html">
           <img class="logo-image" src="images/logo.jpg.png" alt="MTK Tuning Logo" />
         </a>
-        <form class="header-search" action="index.html" method="get">
-          <input
-            type="search"
-            name="q"
-            placeholder="Suche..."
-            aria-label="Website durchsuchen"
-          />
-        </form>
-        <a class="cart-link" href="cart.html" aria-label="Warenkorb">
-          🛒 <span class="cart-count">0</span>
-        </a>
-        <div class="hamburger-menu">
-          <button class="hamburger" type="button" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="menu-dropdown" aria-label="Hauptmenü">
-            <a href="index.html#leistungen">Leistungen</a>
-            <a href="index.html#kontakt">Kontakt</a>
-            <a href="sternenhimmel.html">Sternenhimmel</a>
-            <a href="ambient.html">Ambientebeleuchtung</a>
-            <a href="carplay.html">CarPlay</a>
-          </div>
+        <nav class="header-nav" aria-label="Hauptmenü">
+          <a href="index.html#leistungen">Leistungen</a>
+          <a href="index.html#kontakt">Kontakt</a>
+          <a href="sternenhimmel.html">Sternenhimmel</a>
+          <a href="ambient.html">Ambientebeleuchtung</a>
+          <a href="carplay.html">CarPlay</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+            🛒 <span class="cart-count">0</span>
+          </a>
+          <form class="header-search" action="index.html" method="get">
+            <button class="header-search-button" type="submit" aria-label="Suche öffnen">
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M21 21l-4.3-4.3m2.05-5.2a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </header>

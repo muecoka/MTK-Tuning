@@ -23,14 +23,19 @@ const updateCartCount = () => {
 const injectCartLink = () => {
   document.querySelectorAll(".top-header-inner").forEach((header) => {
     if (header.querySelector(".cart-link")) return;
-    const menu = header.querySelector(".hamburger-menu");
-    if (!menu) return;
+    const actions = header.querySelector(".header-actions");
+    if (!actions) return;
     const cart = document.createElement("a");
     cart.className = "cart-link";
     cart.href = "cart.html";
     cart.setAttribute("aria-label", "Warenkorb");
     cart.innerHTML = '🛒 <span class="cart-count">0</span>';
-    header.insertBefore(cart, menu);
+    const search = actions.querySelector(".header-search");
+    if (search) {
+      actions.insertBefore(cart, search);
+    } else {
+      actions.appendChild(cart);
+    }
   });
 };
 
