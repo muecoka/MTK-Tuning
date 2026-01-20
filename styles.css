@@ -52,6 +52,8 @@ body {
 .header-search {
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .header-nav {
@@ -128,6 +130,26 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.header-search-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: var(--text);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  width: clamp(140px, 16vw, 220px);
+}
+
+.header-search-input::placeholder {
+  color: rgba(246, 247, 255, 0.6);
+}
+
+.header-search-input:focus {
+  outline: 2px solid rgba(103, 215, 255, 0.5);
+  outline-offset: 2px;
+  border-color: var(--accent);
 }
 
 .header-search-button:hover {
