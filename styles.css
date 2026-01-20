@@ -63,6 +63,33 @@ body {
   font-size: 0.95rem;
 }
 
+.hamburger-menu {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--text);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  display: block;
+  border-radius: 999px;
+}
+
+.hamburger-menu:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .header-nav a {
   padding: 0.4rem 0.6rem;
   border-radius: 999px;
@@ -942,6 +969,35 @@ textarea {
 
   .nav {
     align-items: flex-start;
+  }
+
+  .top-header-inner {
+    position: relative;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    z-index: 10;
+  }
+
+  .header-nav.is-open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: inline-flex;
   }
 
   .hero {
