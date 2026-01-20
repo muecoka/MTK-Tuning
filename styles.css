@@ -953,24 +953,7 @@ textarea {
   }
 }
 
-@media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, minmax(60px, 1fr));
-  }
-
-  .carplay-grid {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  }
-
-  .brand-column {
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
-    max-width: 520px;
-  }
-
-  .nav {
-    align-items: flex-start;
-  }
-
+@media (max-width: 1024px) {
   .top-header-inner {
     position: relative;
   }
@@ -998,6 +981,25 @@ textarea {
 
   .hamburger-menu {
     display: inline-flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+  }
+
+  .carplay-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .brand-column {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    max-width: 520px;
+  }
+
+  .nav {
+    align-items: flex-start;
   }
 
   .hero {
