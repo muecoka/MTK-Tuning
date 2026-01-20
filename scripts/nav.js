@@ -10,7 +10,7 @@ document.querySelectorAll(".top-header").forEach((header, index) => {
     toggle.className = "hamburger-menu";
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Menü öffnen");
-    toggle.innerHTML = "<span></span><span></span><span></span>";
+    toggle.textContent = "☰";
     actions.insertBefore(toggle, actions.firstChild);
   }
 
