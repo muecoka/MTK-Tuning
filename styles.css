@@ -1124,3 +1124,50 @@ textarea {
     height: 180px;
   }
 }
+
+.shop-page {
+  padding-bottom: 4rem;
+}
+
+.shop-intro {
+  padding-bottom: 1rem;
+}
+
+.shop-category {
+  text-align: left;
+}
+
+.shop-grid {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+.shop-card {
+  background: linear-gradient(160deg, rgba(13, 18, 32, 0.96), rgba(9, 12, 23, 0.92));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.35rem;
+  display: grid;
+  gap: 0.8rem;
+  box-shadow: var(--shadow);
+}
+
+.shop-card h3 {
+  font-size: 1.1rem;
+}
+
+.shop-card p {
+  color: var(--muted);
+}
+
+.shop-card strong {
+  color: var(--accent-strong);
+  font-size: 1.1rem;
+}
+
+.shop-card .button {
+  width: fit-content;
+}

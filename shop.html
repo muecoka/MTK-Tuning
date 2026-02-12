@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MTK Tuning | Online Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="configurator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="top-header-inner">
+        <a class="logo-link" href="index.html">
+          <img class="logo-image" src="images/logo.jpg.png" alt="MTK Tuning Logo" />
+        </a>
+        <nav class="header-nav" aria-label="Hauptmenü">
+          <a href="index.html#leistungen">Leistungen</a>
+          <a href="index.html#galerie">Galerie</a>
+          <a href="index.html#kontakt">Kontakt</a>
+          <a href="sternenhimmel.html">Sternenhimmel</a>
+          <a href="ambient.html">Ambientebeleuchtung</a>
+          <a href="carplay.html">CarPlay</a>
+          <a href="shop.html">Shop</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="cart.html" aria-label="Warenkorb">
+            🛒 <span class="cart-count">0</span>
+          </a>
+          <form class="header-search" action="shop.html" method="get">
+            <input class="header-search-input" type="search" name="q" placeholder="Suche" aria-label="Suchbegriff eingeben" />
+            <button class="header-search-button" type="submit" aria-label="Suche öffnen">
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M21 21l-4.3-4.3m2.05-5.2a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="shop-page">
+      <section class="section shop-intro">
+        <div class="section-header">
+          <p class="eyebrow">Online Shop</p>
+          <h1>Shopify-Style Shop mit getrennten Kategorien</h1>
+          <p>
+            Alle Produkte sind klar voneinander getrennt: Ambientebeleuchtung,
+            Sternenhimmel und CarPlay.
+          </p>
+        </div>
+      </section>
+
+      <section class="section shop-category" id="shop-ambient">
+        <div class="section-header">
+          <h2>Ambientebeleuchtung</h2>
+          <p>Individuelle Lichtpakete für verschiedene Fahrzeugsegmente.</p>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-card">
+            <h3>Ambient Basic</h3>
+            <p>Türleisten + Fußraum mit App-Steuerung.</p>
+            <strong>ab 599 €</strong>
+            <a class="button primary" href="model-detail.html?name=Ambient%20Basic&price=599&type=ambient">Jetzt konfigurieren</a>
+          </article>
+          <article class="shop-card">
+            <h3>Ambient Plus</h3>
+            <p>Zusätzlich Armaturenbrett und dynamische Szenen.</p>
+            <strong>ab 899 €</strong>
+            <a class="button primary" href="model-detail.html?name=Ambient%20Plus&price=899&type=ambient">Jetzt konfigurieren</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shop-category" id="shop-sternenhimmel">
+        <div class="section-header">
+          <h2>Sternenhimmel</h2>
+          <p>Handgefertigte Deckenhimmel mit Twinkle- und Shooting-Star-Effekt.</p>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-card">
+            <h3>Sternenhimmel Classic</h3>
+            <p>Feine Sternverteilung mit einstellbarer Helligkeit.</p>
+            <strong>ab 1.299 €</strong>
+            <a class="button primary" href="model-detail.html?name=Sternenhimmel%20Classic&price=1299&type=sternenhimmel">Jetzt konfigurieren</a>
+          </article>
+          <article class="shop-card">
+            <h3>Sternenhimmel Signature</h3>
+            <p>Individuelles Sternbild inkl. dynamischer Highlights.</p>
+            <strong>ab 1.699 €</strong>
+            <a class="button primary" href="model-detail.html?name=Sternenhimmel%20Signature&price=1699&type=sternenhimmel">Jetzt konfigurieren</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shop-category" id="shop-carplay">
+        <div class="section-header">
+          <h2>CarPlay</h2>
+          <p>Saubere OEM-Integration für kabellose und kabelgebundene Systeme.</p>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-card">
+            <h3>CarPlay Wired</h3>
+            <p>Kabelgebundene Nachrüstung inkl. Mikrofon-Check.</p>
+            <strong>ab 449 €</strong>
+            <a class="button primary" href="model-detail.html?name=CarPlay%20Wired&price=449&type=carplay">Jetzt konfigurieren</a>
+          </article>
+          <article class="shop-card">
+            <h3>CarPlay Wireless</h3>
+            <p>Komfort-Upgrade mit drahtloser Verbindung.</p>
+            <strong>ab 649 €</strong>
+            <a class="button primary" href="model-detail.html?name=CarPlay%20Wireless&price=649&type=carplay">Jetzt konfigurieren</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-meta">© 2026 MTK Tuning</div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/nav.js"></script>
+  </body>
+</html>
