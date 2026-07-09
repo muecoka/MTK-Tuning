@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galerie Upload | MTK Tuning</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">MTK Tuning</div>
+        <form class="nav-search" role="search">
+          <input type="search" placeholder="Suche" aria-label="Suche" />
+        </form>
+        <details class="menu">
+          <summary class="hamburger">☰ Menü</summary>
+          <div class="nav-links">
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#galerie">Galerie</a>
+            <a href="index.html#ablauf">Ablauf</a>
+            <a href="index.html#kontakt">Kontakt</a>
+          </div>
+        </details>
+        <a class="cta" href="index.html#kontakt">Termin anfragen</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Galerie Verwaltung</p>
+        <h1>Galerie Upload</h1>
+        <p class="subhead">
+          Laden Sie neue Bilder hoch und pflegen Sie Ihre Galerie. Dieses Formular
+          ist eine statische Vorlage und muss mit Ihrem Server verbunden werden.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="card">
+          <h3>Bilder hochladen</h3>
+          <p>
+            Wählen Sie mehrere Dateien aus und ergänzen Sie optional einen Titel.
+            Die tatsächliche Speicherung erfolgt nach Anbindung an ein Backend.
+          </p>
+          <form class="upload-form">
+            <label>
+              Bildtitel
+              <input type="text" placeholder="z. B. Ambientebeleuchtung in Blau" />
+            </label>
+            <label>
+              Bilder auswählen
+              <input type="file" accept="image/*" multiple />
+            </label>
+            <label>
+              Beschreibung
+              <textarea rows="4" placeholder="Kurze Bildbeschreibung"></textarea>
+            </label>
+            <button type="submit" class="button primary">Upload starten</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>MTK Tuning</h4>
+        <p>Ambientebeleuchtung · Sternenhimmel · CarPlay</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Startseite</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+  </body>
+</html>
